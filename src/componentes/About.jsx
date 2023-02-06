@@ -39,7 +39,7 @@ const About = () => {
           <h2 class="fw-normal">Tradicionales</h2>
           <p>
             Descubre las bellezas de la manicura tradicional. Haz clic en el
-            botón para ver nuestra galería de fotos.
+            botón para ver detalles y galería de fotos
           </p>
           <p>
             <a class="btn btn-secondary" href="#tercerFoto">
@@ -154,16 +154,14 @@ const About = () => {
             Transforma tus uñas con los{" "}
             <span class="text-muted">colores brillantes de la moda</span>
           </h2>
-          <p class="lead" data-aos="fade-right">
+          <p class="lead" data-aos="zoom-in">
             Las uñas semipermanentes son la solución perfecta para aquellas
             personas que desean tener un aspecto hermoso y duradero en sus uñas.
             Con una amplia gama de colores brillantes y tendencias de moda,
             puedes transformar tus uñas en un accesorio de moda único. Además,
             estas uñas son más duraderas que las uñas tradicionales y no
-            requieren repintado constante. Con uñas semipermanentes, puedes
-            disfrutar de un aspecto fresco y vibrante durante semanas sin
-            preocuparte por los raspones o las manchas. ¡Transforma tus uñas hoy
-            mismo con esta opción de belleza moderna y práctica!
+            requieren repintado constante.¡Transforma tus uñas hoy mismo con
+            esta opción de belleza moderna y práctica
           </p>
         </div>
         <div class="col-md-5 order-md-1">
@@ -202,7 +200,7 @@ const About = () => {
             cualquier momento. Además, puedes personalizarlas con diferentes
             colores y diseños para darles un toque único y reflejar tu
             personalidad. Ya sea para un evento formal o un día normal, las uñas
-            tradicionales siempre serán una elección acertada.
+            tradicionales siempre serán una elección acertada
           </p>
         </div>
         <div class="col-md-5">
