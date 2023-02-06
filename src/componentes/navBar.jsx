@@ -1,4 +1,6 @@
 import React from "react";
+import Button from "react-bootstrap/Button";
+import ButtonGroup from "react-bootstrap/ButtonGroup";
 
 const NavBar = () => {
   return (
@@ -24,22 +26,28 @@ const NavBar = () => {
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#primerFoto">
-                Acrilicas
-              </a>
-            </li>
-            <li class="nav-item">
               <a
                 class="nav-link active"
                 aria-current="page"
                 href="#segundaFoto"
               >
-                Semipermanentes
+                <ButtonGroup aria-label="Basic example">
+                  <Button variant="secondary">Semipermanentes</Button>
+                </ButtonGroup>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#tercerFoto">
-                Tradicionales
+                <ButtonGroup aria-label="Basic example">
+                  <Button variant="secondary">Tradicionales</Button>
+                </ButtonGroup>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#primerFoto">
+                <ButtonGroup aria-label="Basic example">
+                  <Button variant="secondary">Acrilicas</Button>
+                </ButtonGroup>
               </a>
             </li>
           </ul>

@@ -55,7 +55,7 @@ const Carousel = () => {
                 Transforma tus manos con las uñas acrílicas más radiantes y
                 duraderas de la ciudad! Con nuestro servicio de uñas acrílicas,
                 te aseguramos una apariencia espectacular y una durabilidad
-                única. ¡Contactame y descubre la diferencia! ¡Te esperamos!
+                única. Contactame y descubre la diferencia, Te esperamos
               </p>
               <p>
                 <a
@@ -86,12 +86,10 @@ const Carousel = () => {
             <div class="carousel-caption">
               <h1>Uñas semipermanentes</h1>
               <p>
-                Transforma tus uñas en obras de arte con nuestro servicio de
-                uñas semipermanentes. Con una duración prolongada y una amplia
-                gama de colores y diseños, tendrás unas uñas perfectas en todo
-                momento sin tener que preocuparte por su desgaste o rotura.
-                ¡Agenda tu cita hoy mismo y déjate sorprender por la belleza y
-                calidad de nuestras uñas semipermanentes!
+                te quedarían genial unas uñas Semipermanentes Me encantaría
+                verte con ese toque adicional de belleza en tus manos. Seguro
+                que sería un éxito total, tendrás unas uñas perfectas en todo
+                momento sin tener que preocuparte por su desgaste o rotura
               </p>
               <p>
                 <a
@@ -122,12 +120,10 @@ const Carousel = () => {
             <div class="carousel-caption text-end">
               <h1>Uñas tradicionales</h1>
               <p>
-                Transforma tus uñas en una obra de arte con nuestro servicio de
-                uñas tradicionales. Con una amplia gama de colores y diseños, te
+                tú mereces un trato especial! con nuestro servicio de uñas
+                tradicionales. Con una amplia gama de colores y diseños, te
                 ofrecemos una solución profesional y personalizada para
-                conseguir un look perfecto en tus uñas. ¡Agenda tu cita hoy
-                mismo y déjame sorprenderte con mi habilidad y experiencia en
-                uñas tradicionales! ¡Lúcete con manos impresionantes!
+                conseguir un look perfecto en tus uñas, Agenda tu cita hoy
               </p>
               <p>
                 <a class="btn btn-lg btn-primary" href="#">
