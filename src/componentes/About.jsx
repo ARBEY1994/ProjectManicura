@@ -8,6 +8,8 @@ import imagen3 from "../Fotos/imagen3.png";
 import logo1 from "../Fotos/logo1.png";
 import logo2 from "../Fotos/logo2.png";
 import logo3 from "../Fotos/logo3.png";
+import { Button, ButtonGroup } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const About = () => {
   useEffect(() => {
@@ -69,8 +71,7 @@ const About = () => {
           <p>
             Quieres ver cómo puedes llevar un estilo de uñas acrilicas único y
             personalizado? ¡Presiona el siguiente boton y déjate inspirar por
-            nuestras creaciones! ¡Contactame para darle vida a tus sueños de
-            uñas perfectas!
+            nuestras creaciones!
           </p>
           <p>
             <a class="btn btn-secondary" href="#primerFoto">
@@ -99,7 +100,7 @@ const About = () => {
           <h2 class="fw-normal">Semipermanentes</h2>
           <p>
             Transforma tus uñas en una obra de arte con nuestras uñas
-            semipermanentes. Duraderas, brillantes y sin necesidad de retoques,
+            semipermanentes. Duraderas, brillantes y sin necesidad de retoques
           </p>
           <p>
             <a class="btn btn-secondary" href="#segundaFoto">
@@ -117,12 +118,21 @@ const About = () => {
             Transforma tus uñas{" "}
             <span class="text-muted">con brillo acrílico</span>
           </h2>
-          <p class="lead" data-aos="fade-left">
+          <p class="lead">
             Buscas un cambio drástico en tu apariencia? ¡Mira nada más que
             nuestras uñas acrílicas! Con un acabado brillante y duradero, te
             garantizamos un look elegante y sofisticado. ¿Te animas a
-            transformar tus uñas con estilo y elegancia? ¡contactame y prueba
-            nuestras uñas acrílicas hoy mismo!
+            transformar tus uñas con estilo y elegancia?, puedes ver todos mis
+            trabajos en el siguiente boton...
+          </p>
+          <p>
+            <ButtonGroup aria-label="Basic example">
+              <Link to="/Fotografias">
+                <Button variant="secondary" data-aos="zoom-in-up">
+                  Ver todos mis trabajos...
+                </Button>
+              </Link>
+            </ButtonGroup>
           </p>
         </div>
         <div class="col-md-5">
@@ -154,14 +164,21 @@ const About = () => {
             Transforma tus uñas con los{" "}
             <span class="text-muted">colores brillantes de la moda</span>
           </h2>
-          <p class="lead" data-aos="zoom-in">
+          <p class="lead">
             Las uñas semipermanentes son la solución perfecta para aquellas
             personas que desean tener un aspecto hermoso y duradero en sus uñas.
             Con una amplia gama de colores brillantes y tendencias de moda,
-            puedes transformar tus uñas en un accesorio de moda único. Además,
-            estas uñas son más duraderas que las uñas tradicionales y no
-            requieren repintado constante.¡Transforma tus uñas hoy mismo con
-            esta opción de belleza moderna y práctica
+            puedes transformar tus uñas en un accesorio de moda único, puedes
+            ver todos mis trabajos en el siguiente boton...
+          </p>
+          <p>
+            <ButtonGroup aria-label="Basic example">
+              <Link to="/Fotografias">
+                <Button variant="secondary" data-aos="zoom-in-up">
+                  Ver todos mis trabajos...
+                </Button>
+              </Link>
+            </ButtonGroup>
           </p>
         </div>
         <div class="col-md-5 order-md-1">
@@ -193,16 +210,24 @@ const About = () => {
             Uñas clásicas con un{" "}
             <span class="text-muted">toque de elegancia </span>
           </h2>
-          <p class="lead" data-aos="fade-left">
+          <p class="lead">
             Las uñas tradicionales son una opción elegante y versátil para
             cualquier ocasión. Con su forma rectangular y su acabado liso, estas
             uñas son perfectas para llevar un estilo clásico y sofisticado en
-            cualquier momento. Además, puedes personalizarlas con diferentes
-            colores y diseños para darles un toque único y reflejar tu
-            personalidad. Ya sea para un evento formal o un día normal, las uñas
-            tradicionales siempre serán una elección acertada
+            cualquier momento, puedes ver todos mis trabajos en el siguiente
+            boton...
+          </p>
+          <p>
+            <ButtonGroup aria-label="Basic example">
+              <Link to="/Fotografias">
+                <Button variant="secondary" data-aos="zoom-in-up">
+                  Ver todos mis trabajos...
+                </Button>
+              </Link>
+            </ButtonGroup>
           </p>
         </div>
+
         <div class="col-md-5">
           <svg
             class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"

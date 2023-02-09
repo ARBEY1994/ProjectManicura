@@ -1,8 +1,7 @@
 import React from "react";
-import "../carousel/carousel.css";
-import "../carousel/carousel.rtl.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "../Styles/carousel.css";
 import { useEffect } from "react";
 
 const Carousel = () => {
@@ -126,7 +125,12 @@ const Carousel = () => {
                 conseguir un look perfecto en tus uñas, Agenda tu cita hoy
               </p>
               <p>
-                <a class="btn btn-lg btn-primary" href="#">
+                <a
+                  class="btn btn-lg btn-primary"
+                  href="https://wa.me/573133299109?text=hola,Anny,¿tienes agenda para hoy?"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Contactame
                 </a>
               </p>

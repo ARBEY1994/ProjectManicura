@@ -1,14 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
-
 import logo from "../Fotos/AnnyLogo2.jpg";
 
 const NavBar = () => {
+  const [showNav, setShowNav] = useState(false);
+
+  const toggleNav = () => {
+    setShowNav(!showNav);
+  };
+
   return (
     <nav class="navbar navbar-expand-md navbar-white fixed-top bg-white">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="#myCarousel">
           <img src={logo} alt="no found" />
         </a>
         <button
@@ -19,11 +24,15 @@ const NavBar = () => {
           aria-controls="navbarCollapse"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          onClick={toggleNav}
         >
           <span class="navbar-toggler-icon"></span>
         </button>
       </div>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div
+        class={`collapse navbar-collapse${showNav ? "show" : ""}`}
+        id="navbarCollapse"
+      >
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#segundaFoto">

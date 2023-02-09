@@ -34,12 +34,10 @@ body {
   margin-bottom: 1.5rem;
   text-align: center;
 }
-/* rtl:begin:ignore */
 .marketing .col-lg-4 p {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
 }
-/* rtl:end:ignore */
 
 /* Featurettes
 ------------------------- */
@@ -49,15 +47,6 @@ body {
 }
 
 /* Thin out the marketing headings */
-/* rtl:begin:remove */
-.featurette-heading {
-  letter-spacing: -0.05rem;
-}
-.abc {
-  text-decoration: none;
-}
-
-/* rtl:end:remove */
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */

@@ -1,0 +1,10 @@
+.linkFoto {
+  text-decoration: none;
+}
+.card {
+  transition: all 400ms ease;
+}
+.card:hover {
+  box-shadow: 0px 0px 10px gray;
+  transform: translateY(-5px);
+}

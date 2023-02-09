@@ -5,6 +5,7 @@ import Carousel from "./Carrusel";
 
 import About from "./About";
 import Footer from "./footer";
+import BotonWhat from "./BotonWhat";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Carousel />
       <About />
       <Footer />
+      <BotonWhat />
     </div>
   );
 };
