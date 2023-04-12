@@ -1,0 +1,86 @@
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+.contenedor {
+  overflow: hidden;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.ola {
+  height: 9.4em;
+  width: 6000px;
+  overflow: hidden;
+  position: absolute;
+  position: fixed;
+  right: 0%;
+}
+.bgO {
+  height: 8em;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  position: fixed;
+  right: 0%;
+}
+
+.olaSvg {
+  height: 100%;
+  width: 100%;
+  animation: w1 7s linear infinite;
+}
+.olaSvg2 {
+  height: 100%;
+  width: 100%;
+  animation: w2 7s linear -0.125s infinite,
+    desplazamiento 7s ease -0.125s infinite;
+  opacity: 0.5;
+}
+.olaSvg3 {
+  height: 100%;
+  width: 100%;
+}
+.olaPath {
+  stroke: none;
+  fill: #08f;
+}
+
+@keyframes w1 {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 100%;
+  }
+}
+@keyframes w2 {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 100%;
+  }
+}
+@keyframes desplazamiento {
+  0%,
+  100% {
+    transform: translateY(-25px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}

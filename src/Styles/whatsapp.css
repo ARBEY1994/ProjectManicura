@@ -1,0 +1,24 @@
+.style {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.iconStyle {
+  color: white;
+  font-size: 50px;
+}
+.iconStyle:hover {
+  transition: all 400ms ease;
+  transform: scale(1.1);
+}
+.style:hover {
+  transition: all 400ms ease;
+  transform: scale(1.1);
+}

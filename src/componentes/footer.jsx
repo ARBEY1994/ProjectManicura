@@ -13,7 +13,7 @@ const Footer = () => {
           </ButtonGroup>
         </a>
       </p>
-      <p>2023 Copyright Heiner_Arevalo©, Inc </p>
+      <p>2023 Copyright© Heiner_Arevalo </p>
     </footer>
   );
 };
