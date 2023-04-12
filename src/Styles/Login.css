@@ -84,3 +84,10 @@
     transform: translateY(10px);
   }
 }
+
+@media (max-width: 600px) {
+  .bgO {
+    height: 10em;
+    width: 100%;
+  }
+}
