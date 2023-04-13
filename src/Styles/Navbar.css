@@ -1,0 +1,12 @@
+.navbar-brand img {
+  width: 10%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  border-radius: 6em;
+}
+@media (max-width: 600px) {
+  .navbar-brand img {
+    width: 20%;
+  }
+}

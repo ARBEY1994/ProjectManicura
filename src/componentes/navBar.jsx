@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
-import logo from "../Fotos/AnnyLogo2.jpg";
+import logo from "../Fotos/LogoPag.png";
+import "../Styles/Navbar.css";
 
 const NavBar = () => {
   const [showNav, setShowNav] = useState(false);
@@ -13,7 +14,7 @@ const NavBar = () => {
   return (
     <nav class="navbar navbar-expand-md navbar-white fixed-top bg-white">
       <div class="container-fluid">
-        <a class="navbar-brand" href="Login">
+        <a className="navbar-brand" href="Login">
           <img src={logo} alt="no found" />
         </a>
         <button

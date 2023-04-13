@@ -2,7 +2,7 @@ import React from "react";
 import logo from "../Fotos/A.png";
 import BotonWhat from "./BotonWhat";
 import Footer from "./footer";
-import NavBarT from "./NavBarT";
+import NavBarDetail from "./NavBarDetail";
 import imagen1 from "../Fotos/imagen1.png";
 import imagen2 from "../Fotos/imagen2.jpg";
 import imagen3 from "../Fotos/imagen3.png";
@@ -27,7 +27,7 @@ const Fotografia = () => {
   }, [location]);
   return (
     <div ref={headerRef}>
-      <NavBarT />
+      <NavBarDetail />
 
       <div class="container px-4 py-5" id="custom-cards">
         <h2 class="pb-2 border-bottom">Mis trabajos...</h2>

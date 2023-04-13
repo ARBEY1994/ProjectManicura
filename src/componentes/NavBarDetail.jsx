@@ -2,7 +2,7 @@ import React from "react";
 import { Button, ButtonGroup } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-import logo from "../Fotos/AnnyLogo2.jpg";
+import logo from "../Fotos/LogoPag.png";
 
 const NavBarT = () => {
   return (

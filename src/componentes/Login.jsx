@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../Fotos/AnnyLogo2.jpg";
+import logo from "../Fotos/LogoPag.png";
 import "../Styles/Login.css";
 import firebaseApp from "../Firebase";
 import {
@@ -28,7 +28,7 @@ const Login = () => {
     <div className="">
       <main className="form-signin w-100 m-auto ">
         <form onSubmit={handleSubmit}>
-          <img class="mb-4" src={logo} alt="no fount" />
+          <img className="logoLogin" src={logo} alt="no fount" />
           <h1 className="h3 mb-3 fw-normal font-weight-bold text-dark">
             {registro ? "Registrate" : "Inicia sesion"}
           </h1>

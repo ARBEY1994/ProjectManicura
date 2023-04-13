@@ -84,6 +84,12 @@
     transform: translateY(10px);
   }
 }
+.logoLogin {
+  width: 30%;
+  height: auto;
+
+  border-radius: 6em;
+}
 
 @media (max-width: 600px) {
   .bgO {
