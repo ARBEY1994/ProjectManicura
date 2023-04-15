@@ -49,7 +49,9 @@ function App() {
           </Routes>
         </BrowserRouter>
       ) : (
-        <img src={logo} alt="" />
+        <div className="container">
+          <img className=" img-fluid mx-auto" src={logo} alt="" />
+        </div>
       )}
     </div>
   );
