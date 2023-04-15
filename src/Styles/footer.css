@@ -1,0 +1,22 @@
+footer {
+  height: 7em; /* Cambie la altura según sea necesario */
+}
+
+.abc {
+  display: flex;
+  align-items: center;
+}
+.HondaHome {
+  height: 10em;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.HondaSvg {
+  height: 100%;
+  width: 100%;
+}
+.HondaPath {
+  stroke: none;
+  fill: #dd156d;
+}

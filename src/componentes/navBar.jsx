@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Button from "react-bootstrap/Button";
-import ButtonGroup from "react-bootstrap/ButtonGroup";
 import logo from "../Fotos/LogoPag.png";
 import "../Styles/Navbar.css";
 
@@ -31,31 +29,33 @@ const NavBar = () => {
         </button>
       </div>
       <div
-        class={`collapse navbar-collapse${showNav ? "show" : ""}`}
+        class={`collapse  navbar-collapse${showNav ? "show" : ""}`}
         id="navbarCollapse"
       >
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#segundaFoto">
-              <ButtonGroup aria-label="Basic example">
-                <Button variant="secondary">Semipermanentes</Button>
-              </ButtonGroup>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#tercerFoto">
-              <ButtonGroup aria-label="Basic example">
-                <Button variant="secondary">Tradicionales</Button>
-              </ButtonGroup>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#primerFoto">
-              <ButtonGroup aria-label="Basic example">
-                <Button variant="secondary">Acrilicas</Button>
-              </ButtonGroup>
-            </a>
-          </li>
+        <ul class="navbar-nav respo">
+          <a
+            class="nav-link active letra text-muted"
+            aria-current="page"
+            href="#segundaFoto"
+          >
+            Semipermanentes
+          </a>
+
+          <a
+            class="nav-link active letra text-muted"
+            aria-current="page"
+            href="#tercerFoto"
+          >
+            Tradicionales
+          </a>
+
+          <a
+            class="nav-link active letra text-muted"
+            aria-current="page"
+            href="#primerFoto"
+          >
+            Acrilicas
+          </a>
         </ul>
       </div>
     </nav>

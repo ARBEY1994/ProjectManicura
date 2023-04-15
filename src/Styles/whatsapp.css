@@ -9,6 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 400ms ease;
 }
 .iconStyle {
   color: white;
@@ -19,6 +20,5 @@
   transform: scale(1.1);
 }
 .style:hover {
-  transition: all 400ms ease;
   transform: scale(1.1);
 }

@@ -2,7 +2,7 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
-body {
+.body {
   padding-top: 3rem;
   padding-bottom: 3rem;
   color: #5a5a5a;
@@ -55,6 +55,27 @@ body {
 }
 .abc {
   text-decoration: none;
+}
+.btn-primary {
+  background-color: #dd156d;
+  border-color: #dd156d;
+  transition: background-color 0.3s ease;
+}
+.btn-primary:hover {
+  background-color: #c71f68;
+  border-color: #c71f68;
+}
+.btn-secondary {
+  background-color: #dd156d;
+  border-color: #dd156d;
+  transition: background-color 0.3s ease;
+}
+.btn-secondary:hover {
+  background-color: #c71f68;
+  border-color: #c71f68;
+}
+.h1Carrusel {
+  color: #dd156d;
 }
 
 /* rtl:end:remove */

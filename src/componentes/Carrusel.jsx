@@ -3,6 +3,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "../Styles/carousel.css";
 import { useEffect } from "react";
+import logo from "../FotosPortada/descarga.png";
+import logo2 from "../FotosPortada/descarga2.png";
+import logo3 from "../FotosPortada/descarga3.png";
 
 const Carousel = () => {
   useEffect(() => {
@@ -45,11 +48,12 @@ const Carousel = () => {
             preserveAspectRatio="xMidYMid slice"
             focusable="false"
           >
-            <rect width="100%" height="100%" fill="#777" />
+            <rect width="100%" height="100%" fill="" />
+            <image href={logo} />
           </svg>
           <div class="container">
             <div class="carousel-caption text-start">
-              <h1>Uñas acrilicas</h1>
+              <h1 className="h1Carrusel">Uñas acrilicas</h1>
               <p data-aos="fade-right">
                 Transforma tus manos con las uñas acrílicas más radiantes y
                 duraderas de la ciudad! Con nuestro servicio de uñas acrílicas,
@@ -80,10 +84,11 @@ const Carousel = () => {
             focusable="false"
           >
             <rect width="100%" height="100%" fill="#777" />
+            <image href={logo2} />
           </svg>
           <div class="container">
             <div class="carousel-caption">
-              <h1>Uñas semipermanentes</h1>
+              <h1 className="">Uñas semipermanentes</h1>
               <p>
                 te quedarían genial unas uñas Semipermanentes Me encantaría
                 verte con ese toque adicional de belleza en tus manos. Seguro
@@ -114,10 +119,11 @@ const Carousel = () => {
             focusable="false"
           >
             <rect width="100%" height="100%" fill="#777" />
+            <image href={logo3} />
           </svg>
           <div class="container">
             <div class="carousel-caption text-end">
-              <h1>Uñas tradicionales</h1>
+              <h1 className="h1Carrusel">Uñas tradicionales</h1>
               <p>
                 tú mereces un trato especial! con nuestro servicio de uñas
                 tradicionales. Con una amplia gama de colores y diseños, te

@@ -4,9 +4,32 @@
   position: absolute;
   top: 0;
   border-radius: 6em;
+  transition: all 400ms ease;
 }
+
+.navbar-brand img:hover {
+  transform: scale(1.1);
+}
+.letra {
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  margin-left: 1.5em;
+  margin-right: 1em;
+  transition: all 0.5s ease;
+}
+.letra:hover {
+  transform: scale(1.1);
+  color: #dd156d !important ;
+}
+
 @media (max-width: 600px) {
   .navbar-brand img {
     width: 20%;
+  }
+  .respo {
+    display: flex;
+    position: relative;
+    align-items: flex-start;
   }
 }

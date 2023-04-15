@@ -151,7 +151,9 @@ const About = () => {
             <text x="50%" y="50%" fill="#aaa" dy=".3em">
               500x500
             </text>
-            <image href={imagen2} />
+            <a href="/Fotografias">
+              <image href={imagen2} />
+            </a>
           </svg>
         </div>
       </div>
@@ -197,7 +199,9 @@ const About = () => {
             <text x="50%" y="50%" fill="#aaa" dy=".3em">
               500x500
             </text>
-            <image href={imagen3} />
+            <a href="/Fotografias">
+              <image href={imagen3} />
+            </a>
           </svg>
         </div>
       </div>
@@ -244,7 +248,9 @@ const About = () => {
             <text x="50%" y="50%" fill="#aaa" dy=".3em">
               500x500
             </text>
-            <image href={imagen} />
+            <a href="/Fotografias">
+              <image href={imagen} />
+            </a>
           </svg>
         </div>
       </div>
