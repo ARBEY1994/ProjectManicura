@@ -1,4 +1,4 @@
-.style {
+.styleWhat {
   position: fixed;
   bottom: 20px;
   right: 30px;
@@ -10,6 +10,17 @@
   justify-content: center;
   align-items: center;
   transition: all 400ms ease;
+}
+.message-porLeer {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 20px;
+  height: 22px;
+  background-color: red;
+  color: aliceblue;
+  border-radius: 50%;
+  z-index: 1;
 }
 .iconStyle {
   color: white;
