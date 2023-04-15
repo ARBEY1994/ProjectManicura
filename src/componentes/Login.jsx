@@ -36,7 +36,7 @@ const Login = () => {
           <div className="form-floating">
             <input
               type="email"
-              className="form-control"
+              className="form-control "
               id="floatingInput"
               placeholder="name@example.com"
             />
@@ -56,14 +56,14 @@ const Login = () => {
           </button>
 
           <div className="form-group">
-            <button
-              className="btn btn-secondary mt-4 form-control"
+            <p
+              className=" mt-4 letra cursor "
               onClick={() => setRegistro(!registro)}
             >
               {registro
                 ? "ya tienes una cuenta? inicia sesion"
                 : "no tienes cuenta? registrate"}
-            </button>
+            </p>
             <p class="mt-5 mb-3 text-muted">&copy; 2023</p>
           </div>
         </form>
