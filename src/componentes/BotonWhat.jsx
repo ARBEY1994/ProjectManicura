@@ -5,7 +5,7 @@ const BotonWhat = () => {
   return (
     <div className="styleWhat">
       <a
-        href="https://wa.me/573133299109?text=hola,Anny,¿tienes agenda para hoy?"
+        href="https://wa.me/573133299109?text=Hola Anny, ¿tienes agenda para hoy?"
         target="_blank"
         rel="noreferrer"
       >
