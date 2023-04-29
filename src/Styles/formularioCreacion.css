@@ -1,0 +1,84 @@
+.createdrow {
+  overflow-y: hidden;
+  height: 100vh;
+}
+.HondaHome2 {
+  height: 10em;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+}
+
+.HondaSvg2 {
+  height: 100%;
+  width: 100%;
+}
+.HondaPath2 {
+  stroke: none;
+  fill: #dd156d;
+}
+.fotocarga {
+  position: relative;
+  top: 15%;
+}
+.custom-file-input::-webkit-file-upload-button {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  color: #666;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.custom-file-input::-moz-file-upload-button {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  color: #666;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.custom-file-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  color: #666;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .imagenlogo {
+    height: 80%;
+    width: 80%;
+  }
+  .fotocarga img {
+    height: 50%;
+    width: 90%;
+    position: relative;
+    z-index: 1;
+  }
+  .copy {
+    position: absolute;
+    bottom: 10%;
+  }
+  .copy2 {
+    position: relative;
+    top: 21%;
+  }
+  .HondaHome2 {
+    height: 10em;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+  }
+}

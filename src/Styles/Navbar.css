@@ -18,6 +18,18 @@
   margin-right: 1em;
   transition: all 0.5s ease;
 }
+.letraB {
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-left: 1.5em;
+  margin-right: 1em;
+  transition: all 0.5s ease;
+}
+.letraB:hover {
+  transform: scale(1.1);
+  color: #dd156d !important ;
+}
 .letra:hover {
   transform: scale(1.1);
   color: #dd156d !important ;

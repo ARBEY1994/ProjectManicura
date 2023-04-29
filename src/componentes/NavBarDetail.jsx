@@ -13,7 +13,7 @@ const NavBarT = () => {
         </a>
         <ButtonGroup aria-label="Basic example">
           <Link to="/">
-            <Button variant="secondary">Volver</Button>
+            <Button variant="secondary">Inicio</Button>
           </Link>
         </ButtonGroup>
       </div>

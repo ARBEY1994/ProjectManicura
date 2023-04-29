@@ -53,9 +53,7 @@
 .featurette-heading {
   letter-spacing: -0.05rem;
 }
-.abc {
-  text-decoration: none;
-}
+
 .btn-primary {
   background-color: #dd156d;
   border-color: #dd156d;
@@ -78,7 +76,10 @@
   color: #dd156d;
 }
 
-/* rtl:end:remove */
+.opacidad {
+  opacity: 0.9;
+  filter: brightness(50%) contrast(100%);
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */

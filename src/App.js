@@ -7,12 +7,13 @@ import appFirebase from "./Firebase";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { useEffect, useState } from "react";
 import logo from "./Fotos/LogoPag.png";
+import Formulario from "./componentes/FormularioCreacion";
 
-const auth = getAuth(appFirebase);
+const Auth = getAuth(appFirebase);
 
 function App() {
   const [usuario, setUsuario] = useState(null);
-  onAuthStateChanged(auth, (userFirebase) => {
+  onAuthStateChanged(Auth, (userFirebase) => {
     if (userFirebase) {
       setUsuario(userFirebase);
     } else {
@@ -39,13 +40,10 @@ function App() {
             <Route
               path="/Login"
               element={
-                usuario ? (
-                  <Home correoUsuario={usuario.floatingInput} />
-                ) : (
-                  <Login />
-                )
+                usuario ? <Home correoUsuario={usuario.email} /> : <Login />
               }
             />
+            <Route path="/FormularioCreacion" element={<Formulario />} />
           </Routes>
         </BrowserRouter>
       ) : (

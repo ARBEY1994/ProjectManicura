@@ -128,7 +128,7 @@ const About = () => {
           <p>
             <ButtonGroup aria-label="Basic example">
               <Link to="/Fotografias">
-                <Button variant="secondary" data-aos="zoom-in-up">
+                <Button variant="secondary" data-aos="flip-up">
                   Ver todos mis trabajos...
                 </Button>
               </Link>
@@ -176,7 +176,7 @@ const About = () => {
           <p>
             <ButtonGroup aria-label="Basic example">
               <Link to="/Fotografias">
-                <Button variant="secondary" data-aos="zoom-in-up">
+                <Button variant="secondary" data-aos="flip-up">
                   Ver todos mis trabajos...
                 </Button>
               </Link>
@@ -224,7 +224,7 @@ const About = () => {
           <p>
             <ButtonGroup aria-label="Basic example">
               <Link to="/Fotografias">
-                <Button variant="secondary" data-aos="zoom-in-up">
+                <Button variant="secondary" data-aos="flip-up">
                   Ver todos mis trabajos...
                 </Button>
               </Link>

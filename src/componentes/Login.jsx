@@ -7,21 +7,42 @@ import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
 } from "firebase/auth";
+import { doc, getDoc, getFirestore, setDoc } from "firebase/firestore";
 
 const Auth = getAuth(firebaseApp);
+const db = getFirestore(firebaseApp);
 
 const Login = () => {
   const [registro, setRegistro] = useState(false);
+
   const handleSubmit = async (e) => {
     e.preventDefault(e);
     const correo = e.target.floatingInput.value;
     const contraseña = e.target.floatingPassword.value;
-
-    if (registro) {
-      await createUserWithEmailAndPassword(Auth, correo, contraseña);
-    } else {
-      await signInWithEmailAndPassword(Auth, correo, contraseña);
+    try {
+      if (registro) {
+        await createUserWithEmailAndPassword(Auth, correo, contraseña);
+        await setDoc(doc(db, "usuarios", Auth.currentUser.uid), {
+          role: "user",
+        });
+      } else {
+        await signInWithEmailAndPassword(Auth, correo, contraseña);
+        const userDoc = await getDoc(doc(db, "usuarios", Auth.currentUser.uid));
+        const userRole = userDoc.data().role;
+        if (userRole === "admin") {
+          alert(
+            "Bienvenida Anny Julieth, ahora puedes subir o borrar tus trabajos de manicura"
+          );
+        }
+      }
+    } catch (error) {
+      alert(
+        error.message ||
+          "Credenciales incorrectos. Por favor, inténtalo de nuevo."
+      );
     }
+    e.target.floatingInput.value = "";
+    e.target.floatingPassword.value = "";
   };
 
   return (

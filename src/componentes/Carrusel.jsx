@@ -38,7 +38,7 @@ const Carousel = () => {
         ></button>
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item active">
+        <div class="carousel-item active ">
           <svg
             class="bd-placeholder-img"
             width="100%"
@@ -49,17 +49,24 @@ const Carousel = () => {
             focusable="false"
           >
             <rect width="100%" height="100%" fill="" />
-            <image href={logo} />
+            <image className="opacidad" href={logo} />
           </svg>
           <div class="container">
-            <div class="carousel-caption text-start">
-              <h1 className="h1Carrusel">Uñas acrilicas</h1>
-              <p data-aos="fade-right">
-                Transforma tus manos con las uñas acrílicas más radiantes y
-                duraderas de la ciudad! Con nuestro servicio de uñas acrílicas,
-                te aseguramos una apariencia espectacular y una durabilidad
-                única. Contactame y descubre la diferencia, Te esperamos
-              </p>
+            <div class="carousel-caption text-start ">
+              <div className="">
+                <h1 className="h1Carrusel  ">
+                  <strong>Uñas acrilicas</strong>{" "}
+                </h1>
+
+                <p data-aos="fade-right ">
+                  Transforma tus manos con las uñas acrílicas más radiantes y
+                  duraderas de la ciudad! Con nuestro servicio de uñas
+                  acrílicas, te aseguramos una apariencia espectacular y una
+                  durabilidad única. Contactame y descubre la diferencia, Te
+                  esperamos
+                </p>
+              </div>
+
               <p>
                 <a
                   class="btn btn-lg btn-primary"
@@ -84,11 +91,14 @@ const Carousel = () => {
             focusable="false"
           >
             <rect width="100%" height="100%" fill="#777" />
-            <image href={logo2} />
+            <image className="opacidad" href={logo2} />
           </svg>
           <div class="container">
             <div class="carousel-caption">
-              <h1 className="">Uñas semipermanentes</h1>
+              <h1 className="h1Carrusel">
+                {" "}
+                <strong>Uñas semipermanentes</strong>{" "}
+              </h1>
               <p>
                 te quedarían genial unas uñas Semipermanentes Me encantaría
                 verte con ese toque adicional de belleza en tus manos. Seguro
@@ -119,11 +129,13 @@ const Carousel = () => {
             focusable="false"
           >
             <rect width="100%" height="100%" fill="#777" />
-            <image href={logo3} />
+            <image className="opacidad" href={logo3} />
           </svg>
           <div class="container">
             <div class="carousel-caption text-end">
-              <h1 className="h1Carrusel">Uñas tradicionales</h1>
+              <h1 className="h1Carrusel">
+                <strong>Uñas tradicionales</strong>{" "}
+              </h1>
               <p>
                 tú mereces un trato especial! con nuestro servicio de uñas
                 tradicionales. Con una amplia gama de colores y diseños, te

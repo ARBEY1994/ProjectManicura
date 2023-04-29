@@ -5,10 +5,10 @@ import About from "./About";
 import Footer from "./footer";
 import BotonWhat from "./BotonWhat";
 
-const Home = () => {
+const Home = ({ correoUsuario }) => {
   return (
     <div>
-      <NavBar />
+      <NavBar correoUsuario={correoUsuario} />
       <Carousel />
       <About />
       <Footer />

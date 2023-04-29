@@ -6,6 +6,7 @@
   height: 55px;
   border-radius: 50%;
   background-color: green;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,11 +26,11 @@
 .iconStyle {
   color: white;
   font-size: 50px;
+  transition: all 400ms ease;
 }
 .iconStyle:hover {
-  transition: all 400ms ease;
   transform: scale(1.1);
 }
-.style:hover {
+.styleWhat:hover {
   transform: scale(1.1);
 }
