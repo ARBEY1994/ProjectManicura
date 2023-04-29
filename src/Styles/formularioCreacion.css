@@ -55,7 +55,7 @@
   font-weight: bold;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .imagenlogo {
     height: 80%;
     width: 80%;
@@ -67,18 +67,13 @@
     z-index: 1;
   }
   .copy {
-    position: absolute;
-    bottom: 10%;
+    display: none;
   }
   .copy2 {
-    position: relative;
-    top: 21%;
+    display: none;
   }
   .HondaHome2 {
-    height: 10em;
-    width: 100%;
     overflow: hidden;
-    position: absolute;
-    bottom: 0;
+    display: none;
   }
 }
