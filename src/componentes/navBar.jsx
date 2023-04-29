@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import logo from "../Fotos/LogoPag.png";
 import "../Styles/Navbar.css";
 import AppFirebase from "../Firebase";
-import { getAuth, signOut } from "firebase/auth";
+import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
 import { doc, getDoc, getFirestore } from "firebase/firestore";
 import { Link } from "react-router-dom";
 
@@ -15,6 +15,15 @@ const NavBar = ({ correoUsuario }) => {
   const toggleNav = () => {
     setShowNav(!showNav);
   };
+
+  const [usuario, setUsuario] = useState(null);
+  onAuthStateChanged(Auth, (userFirebase) => {
+    if (userFirebase) {
+      setUsuario(userFirebase);
+    } else {
+      setUsuario(null);
+    }
+  });
   // estado para mostrar la ruta de creacion a admin
 
   const [isAdmin, setIsAdmin] = useState(false);
@@ -65,13 +74,16 @@ const NavBar = ({ correoUsuario }) => {
           >
             Bienvenid@,{correoUsuario}
           </a>
-          <span
-            class="nav-link active letraB text-muted"
-            aria-current="page"
-            onClick={() => signOut(Auth)}
-          >
-            Cerrar cesion
-          </span>
+          {usuario && (
+            <span
+              class="nav-link active letraB text-muted"
+              aria-current="page"
+              onClick={() => signOut(Auth)}
+            >
+              Cerrar cesion
+            </span>
+          )}
+
           {isAdmin && (
             <Link
               class="nav-link active letraB text-muted"

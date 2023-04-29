@@ -36,10 +36,7 @@ const Login = () => {
         }
       }
     } catch (error) {
-      alert(
-        error.message ||
-          "Credenciales incorrectos. Por favor, inténtalo de nuevo."
-      );
+      alert("Credenciales incorrectos. Por favor, inténtalo de nuevo.");
     }
     e.target.floatingInput.value = "";
     e.target.floatingPassword.value = "";
