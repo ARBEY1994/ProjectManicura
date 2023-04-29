@@ -18,9 +18,15 @@
   stroke: none;
   fill: #dd156d;
 }
-.fotocarga {
+.fotocarga img {
   position: relative;
-  top: 15%;
+  top: 20%;
+  height: 10em;
+  width: auto;
+}
+.containerInput {
+  position: relative;
+  top: 2em;
 }
 .custom-file-input::-webkit-file-upload-button {
   border: 1px solid #ccc;
@@ -60,12 +66,7 @@
     height: 80%;
     width: 80%;
   }
-  .fotocarga img {
-    height: 100%;
-    width: 100%;
-    position: relative;
-    z-index: 1;
-  }
+
   .copy {
     display: none;
   }
@@ -73,7 +74,13 @@
     display: none;
   }
   .HondaHome2 {
-    overflow: hidden;
     display: none;
+  }
+  .createdrow {
+    overflow: hidden;
+  }
+  .fotocarga img {
+    height: 50%;
+    width: 50%;
   }
 }

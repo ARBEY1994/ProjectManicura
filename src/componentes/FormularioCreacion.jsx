@@ -60,9 +60,9 @@ const Formulario = () => {
               width="80%"
             />
           </div>
-          <div className="col-lg-6 col-md-6 col-sm-12">
+          <div className="col-lg-6 col-md-6 col-sm-12 containerInput">
             <form
-              class="col-lg-6  col-md-6  col-sm-12 fotocarga"
+              class="col-lg-6  col-md-6  col-sm-12 "
               onSubmit={handleSubmit}
             >
               <br />
@@ -93,19 +93,21 @@ const Formulario = () => {
                   Subir
                 </Button>
               </label>
+            </form>
+            <div className="col-lg-6 col-md-6 col-sm-12 fotocarga">
               {imagenSeleccionada && (
                 <img
                   src={imagenSeleccionada}
                   alt="Imagen seleccionada"
-                  width="90%"
-                  height="20%"
                   className="img-fluid"
                 />
               )}
-            </form>
+            </div>
           </div>
         </div>
       </div>
+      <br />
+      <br />
       <h2 class="pb-2 border-bottom copy2">{""}</h2>
       <div>
         <footer class="container-fluid  copy col-md-6 text-sm-center">
