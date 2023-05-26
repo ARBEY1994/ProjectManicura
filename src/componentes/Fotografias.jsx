@@ -11,8 +11,8 @@ import {
   deleteDoc,
   doc,
   getDoc,
-  getDocs,
   getFirestore,
+  onSnapshot,
 } from "firebase/firestore";
 import AppFirebase from "../Firebase";
 import { getAuth } from "firebase/auth";
@@ -31,23 +31,27 @@ const Fotografia = () => {
   }, [location]);
   //---------------------------//
 
-  //funcion para hacer GET  a db firestore
+  // Obtener las fotos al montar el componente
   useEffect(() => {
     const getList = async () => {
       try {
-        const peticion = await getDocs(collection(db, "fotos"));
-        const docs = [];
-        peticion.forEach((e) => {
-          docs.push({ ...e.data(), id: e.id });
+        const collectionRef = collection(db, "fotos");
+        onSnapshot(collectionRef, (snapshot) => {
+          const docs = snapshot.docs
+            .filter((doc) => doc.exists && doc.data() && !doc.data().error) // Filtrar documentos sin error 403
+            .map((doc) => ({
+              ...doc.data(),
+              id: doc.id,
+            }));
+          setGetFotos(docs);
         });
-        console.log("fotos:", docs);
-        setGetFotos(docs);
       } catch (error) {
         console.log(error);
       }
     };
+
     getList();
-  }, [getFotos, db]);
+  }, [db]);
 
   //--------funcion para hacer un DELETE a firebase---//
 
